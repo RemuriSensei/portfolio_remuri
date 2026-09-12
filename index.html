@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rhemley Pena — IT Student & Aspiring Web Developer</title>
+<meta name="description" content="Portfolio of Alex Chen, IT student and aspiring web developer.">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="bg-glow" aria-hidden="true"></div>
+
+<!-- ============================== NAVBAR ============================== -->
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">Rhemley Glyde Peña<span class="caret">_</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-nav>about</a>
+      <a href="#skills" data-nav>skills</a>
+      <a href="#projects" data-nav>projects</a>
+      <a href="#education" data-nav>education</a>
+      <a href="#contact" data-nav>contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle light and dark mode">
+        <!-- Sun/Moon icon swapped via JS -->
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile nav overlay -->
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#about" data-nav-mobile>about</a>
+  <a href="#skills" data-nav-mobile>skills</a>
+  <a href="#projects" data-nav-mobile>projects</a>
+  <a href="#education" data-nav-mobile>education</a>
+  <a href="#contact" data-nav-mobile>contact</a>
+</nav>
+
+<!-- ============================== HERO ============================== -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">whoami</div>
+      <h1 class="hero-name">Rhemley Glyde M. Peña</h1>
+      <div class="hero-role">IT Student &amp; Aspiring Web Developer</div>
+      <div class="hero-type"><span id="typedText"></span><span class="cursor" aria-hidden="true"></span></div>
+      <p class="hero-desc" style="text-align: justify;">
+"Good day! My name is Rhemley Glyde M. Peña, and I am a second-year BSIT (Bachelor of Science in Information Technology) student aspiring to become a professional software developer. Both my skill set and personal hobbies are deeply rooted in technology. I constantly spend my free time exploring new tech trends, experimenting with code, and building projects that turn creative concepts into functional software. I am highly motivated to bridge the gap between my academic studies and real-world engineering, and I am eager to connect with fellow developers and mentors who share this same passion."      </p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary"><span class="prompt"></span> view-projects</a>
+        <a href="#contact" class="btn"><span class="prompt"></span> contact.sh</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>12+</strong><span>projects built</span></div>
+        <div><strong>6</strong><span>languages used</span></div>
+        <div><strong>3.7</strong><span>GPA / 1.56 , STI System Grading</span></div>
+      </div>
+    </div>
+
+    <div class="avatar-window win">
+      <div class="win-bar">
+        <span class="win-dot red"></span><span class="win-dot yellow"></span><span class="win-dot green"></span>
+        <span class="win-title">profile.png</span>
+      </div>
+      <div class="avatar-frame">
+        <img src="prof.jpg" alt="">
+       
+      </div>
+      <div class="status-line"><span class="status-dot"></span> status: available for internships</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== ABOUT ============================== -->
+<section id="about">
+  <div class="container">
+    <div class="eyebrow reveal">01 / about-me</div>
+    <h2 class="section-title reveal">A bit about how I got here</h2>
+    <p class="section-sub reveal">The short version, rendered the way I'd write it in a README.</p>
+
+    <div class="about-grid">
+      <div class="win reveal">
+        <div class="win-bar">
+          <span class="win-dot red"></span><span class="win-dot yellow"></span><span class="win-dot green"></span>
+          <span class="win-title">about.md</span>
+        </div>
+        <div class="win-body about-md">
+          <p><span class="md-h">##</span> <span class="md-bold">Background</span></p>
+          <p> was a HUMSS student in Senior High School at Albor National High School in the Dinagat Islands. Originally, Information Technology (IT) was not my main choice because I wanted to pursue Criminology to become a police officer. However, we faced many financial difficulties regarding tuition. As the middle child, I always worried about whether my parents could afford my college education. The interesting part is that I did not take Criminology because my father suggested that IT is a better choice since it is highly in demand today.
+          </p>
+          <p><span class="md-h">##</span> <span class="md-bold">What I'm focused on</span></p>
+          <p>Right now I'm deepening my front-end fundamentals while getting comfortable with
+          back-end basics (databases, simple APIs). I like projects with a visible,
+          usable result — I'd rather ship something small and working than plan something huge
+          and unfinished.</p>
+          <p><span class="md-h">##</span> <span class="md-bold">Goals</span></p>
+          <p>Land an internship where I can work on a real codebase with other developers,
+          and eventually specialize in either full-stack web development .</p>
+        </div>
+      </div>
+
+      <div class="win facts-card reveal">
+        <div class="win-bar">
+          <span class="win-dot red"></span><span class="win-dot yellow"></span><span class="win-dot green"></span>
+          <span class="win-title">quick-facts.json</span>
+        </div>
+        <div class="fact-row"><span>location</span><span>Dinagat Islands , Philippines</span></div>
+        <div class="fact-row"><span>focus</span><span>Web Development & Networking</span></div>
+        <div class="fact-row"><span>year</span><span>2rd Year, BSIT</span></div>
+        <div class="fact-row"><span>availability</span><span>Open to internships</span></div>
+        <div class="fact-row"><span>editor</span><span>VS Code</span></div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== SKILLS ============================== -->
+<section id="skills">
+  <div class="container">
+    <div class="eyebrow reveal">02 / skills</div>
+    <h2 class="section-title reveal">Currently installed</h2>
+    <p class="section-sub reveal">Proficiency is self-rated and rounded — think of it as a progress bar, not a certificate.</p>
+
+    <div class="skills-grid reveal-stagger" id="skillsGrid">
+      <!-- Each .skill-fill gets its width set by JS on scroll-reveal -->
+      <div class="skill-card">
+        <div class="skill-top"><span class="skill-name">HTML</span><span class="skill-pct">90%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+        <span class="skill-tag">markup</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top"><span class="skill-name">CSS</span><span class="skill-pct">85%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+        <span class="skill-tag">styling</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top"><span class="skill-name">JavaScript</span><span class="skill-pct">38%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="78"></div></div>
+        <span class="skill-tag">frontend</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct">75%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="75"></div></div>
+        <span class="skill-tag">scripting</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top"><span class="skill-name">Java</span><span class="skill-pct">65%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="65"></div></div>
+        <span class="skill-tag">oop</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top"><span class="skill-name">SQL</span><span class="skill-pct">70%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="70"></div></div>
+        <span class="skill-tag">databases</span>
+      </div>
+      <div class="skill-card">
+        <div class="skill-top"><span class="skill-name">Git &amp; GitHub</span><span class="skill-pct">80%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+        <span class="skill-tag">version control</span>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-top"><span class="skill-name">Networking</span><span class="skill-pct">60%</span></div>
+        <div class="skill-track"><div class="skill-fill" data-width="60"></div></div>
+        <span class="skill-tag">it fundamentals</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== PROJECTS ============================== -->
+<section id="projects">
+  <div class="container">
+    <div class="eyebrow reveal">03 / projects</div>
+    <h2 class="section-title reveal">Things I've built</h2>
+    <p class="section-sub reveal">A mix of coursework, self-initiated builds, and one that started as a bug I got curious about.</p>
+
+    <div class="projects-grid reveal-stagger">
+      <div class="project-card">
+        <div class="project-top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          taskflow
+        </div>
+        <div class="project-body">
+          <h3>TaskFlow</h3>
+          <p>A drag-and-drop task manager with boards, due dates, and local persistence — built to
+          actually replace the sticky notes on my monitor.</p>
+          <div class="tag-row">
+            <span class="tag">JavaScript</span><span class="tag">CSS Grid</span><span class="tag">LocalStorage</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.86 3.15 8.98 7.52 10.43.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.05-3.06.66-3.71-1.3-3.71-1.3-.5-1.27-1.22-1.6-1.22-1.6-1-.68.07-.67.07-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.2 3.2.92.1-.71.38-1.2.7-1.48-2.44-.28-5.01-1.22-5.01-5.42 0-1.2.43-2.18 1.13-2.95-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.13a10.5 10.5 0 0 1 5.5 0c2.1-1.42 3.02-1.13 3.02-1.13.6 1.52.22 2.64.11 2.92.7.77 1.13 1.75 1.13 2.95 0 4.21-2.58 5.14-5.03 5.41.39.34.74 1.02.74 2.06 0 1.49-.01 2.68-.01 3.05 0 .29.2.64.76.53A10.52 10.52 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg> code</a>
+            <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg> demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          weathernow
+        </div>
+        <div class="project-body">
+          <h3>WeatherNow</h3>
+          <p>Location-based weather lookup with a 5-day forecast, using a public REST API and
+          async/await with proper error and loading states.</p>
+          <div class="tag-row">
+            <span class="tag">JavaScript</span><span class="tag">Fetch API</span><span class="tag">CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.86 3.15 8.98 7.52 10.43.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.05-3.06.66-3.71-1.3-3.71-1.3-.5-1.27-1.22-1.6-1.22-1.6-1-.68.07-.67.07-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.2 3.2.92.1-.71.38-1.2.7-1.48-2.44-.28-5.01-1.22-5.01-5.42 0-1.2.43-2.18 1.13-2.95-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.13a10.5 10.5 0 0 1 5.5 0c2.1-1.42 3.02-1.13 3.02-1.13.6 1.52.22 2.64.11 2.92.7.77 1.13 1.75 1.13 2.95 0 4.21-2.58 5.14-5.03 5.41.39.34.74 1.02.74 2.06 0 1.49-.01 2.68-.01 3.05 0 .29.2.64.76.53A10.52 10.52 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg> code</a>
+            <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg> demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          grade-tracker
+        </div>
+        <div class="project-body">
+          <h3>Student Grade Tracker</h3>
+          <p>Desktop app for computing weighted grades per subject with a simple GUI, built as a
+          coursework project and still the thing I use every semester.</p>
+          <div class="tag-row">
+            <span class="tag">Python</span><span class="tag">Tkinter</span><span class="tag">SQLite</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.86 3.15 8.98 7.52 10.43.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.05-3.06.66-3.71-1.3-3.71-1.3-.5-1.27-1.22-1.6-1.22-1.6-1-.68.07-.67.07-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.2 3.2.92.1-.71.38-1.2.7-1.48-2.44-.28-5.01-1.22-5.01-5.42 0-1.2.43-2.18 1.13-2.95-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.13a10.5 10.5 0 0 1 5.5 0c2.1-1.42 3.02-1.13 3.02-1.13.6 1.52.22 2.64.11 2.92.7.77 1.13 1.75 1.13 2.95 0 4.21-2.58 5.14-5.03 5.41.39.34.74 1.02.74 2.06 0 1.49-.01 2.68-.01 3.05 0 .29.2.64.76.53A10.52 10.52 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg> code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          e-library
+        </div>
+        <div class="project-body">
+          <h3>E-Library System</h3>
+          <p>Group capstone project: a library catalog and borrowing system with role-based
+          logins for students and librarians, backed by a relational database.</p>
+          <div class="tag-row">
+            <span class="tag">Java</span><span class="tag">MySQL</span><span class="tag">JDBC</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.86 3.15 8.98 7.52 10.43.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.05-3.06.66-3.71-1.3-3.71-1.3-.5-1.27-1.22-1.6-1.22-1.6-1-.68.07-.67.07-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.2 3.2.92.1-.71.38-1.2.7-1.48-2.44-.28-5.01-1.22-5.01-5.42 0-1.2.43-2.18 1.13-2.95-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.13a10.5 10.5 0 0 1 5.5 0c2.1-1.42 3.02-1.13 3.02-1.13.6 1.52.22 2.64.11 2.92.7.77 1.13 1.75 1.13 2.95 0 4.21-2.58 5.14-5.03 5.41.39.34.74 1.02.74 2.06 0 1.49-.01 2.68-.01 3.05 0 .29.2.64.76.53A10.52 10.52 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg> code</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          portfolio-cms
+        </div>
+        <div class="project-body">
+          <h3>Portfolio CMS</h3>
+          <p>A tiny content-management backend so non-technical clients can edit their own
+          portfolio text and images without touching code.</p>
+          <div class="tag-row">
+            <span class="tag">Python</span><span class="tag">Flask</span><span class="tag">SQLite</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.86 3.15 8.98 7.52 10.43.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.05-3.06.66-3.71-1.3-3.71-1.3-.5-1.27-1.22-1.6-1.22-1.6-1-.68.07-.67.07-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.2 3.2.92.1-.71.38-1.2.7-1.48-2.44-.28-5.01-1.22-5.01-5.42 0-1.2.43-2.18 1.13-2.95-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.13a10.5 10.5 0 0 1 5.5 0c2.1-1.42 3.02-1.13 3.02-1.13.6 1.52.22 2.64.11 2.92.7.77 1.13 1.75 1.13 2.95 0 4.21-2.58 5.14-5.03 5.41.39.34.74 1.02.74 2.06 0 1.49-.01 2.68-.01 3.05 0 .29.2.64.76.53A10.52 10.52 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg> code</a>
+            <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg> demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          packet-sniffer
+        </div>
+        <div class="project-body">
+          <h3>Network Packet Analyzer</h3>
+          <p>A command-line tool that captures and inspects live network traffic, built to
+          understand what "networking" actually looks like at the packet level.</p>
+          <div class="tag-row">
+            <span class="tag">Python</span><span class="tag">Sockets</span><span class="tag">CLI</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.86 3.15 8.98 7.52 10.43.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.05-3.06.66-3.71-1.3-3.71-1.3-.5-1.27-1.22-1.6-1.22-1.6-1-.68.07-.67.07-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.2 3.2.92.1-.71.38-1.2.7-1.48-2.44-.28-5.01-1.22-5.01-5.42 0-1.2.43-2.18 1.13-2.95-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.13a10.5 10.5 0 0 1 5.5 0c2.1-1.42 3.02-1.13 3.02-1.13.6 1.52.22 2.64.11 2.92.7.77 1.13 1.75 1.13 2.95 0 4.21-2.58 5.14-5.03 5.41.39.34.74 1.02.74 2.06 0 1.49-.01 2.68-.01 3.05 0 .29.2.64.76.53A10.52 10.52 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg> code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== EDUCATION ============================== -->
+<section id="education">
+  <div class="container">
+    <div class="eyebrow reveal">04 / education</div>
+    <h2 class="section-title reveal">Commit history</h2>
+    <p class="section-sub reveal">My academic path, logged in order.</p>
+
+    <div class="timeline reveal">
+      <div class="commit current">
+        <div class="commit-dot"></div>
+        <span class="commit-hash">1</span><span class="commit-branch">HEAD → main</span>
+        <div class="commit-title">B.S. in Information Technology</div>
+        <div class="commit-meta">STI Surigao City , (2nd year BSIT)</div>
+        <p class="commit-desc">Focus on web technologies, database systems, and networking.
+        Active member of the school's Computer Society.</p>
+      </div>
+      <div class="commit">
+        <div class="commit-dot"></div>
+        <span class="commit-hash">2</span>
+        <div class="commit-title">Senior High School — HUMSS Strand</div>
+        <div class="commit-meta">Albor National High School : 2024-2025</div>
+        <p class="commit-desc">understanding human behavior, society, culture, and interaction</p>
+      </div>
+      <div class="commit">
+        <div class="commit-dot"></div>
+        <span class="commit-hash">3</span>
+        <div class="commit-title">freeCodeCamp — Responsive Web Design</div>
+        <div class="commit-meta">Certificate · 2026</div>
+        <p class="commit-desc">300-hour self-paced certification covering HTML, CSS, and
+        accessible, responsive layout techniques.</p>
+      </div>
+      <div class="commit">
+        <div class="commit-dot"></div>
+        <span class="commit-hash">4</span>
+        <div class="commit-title">Junior High School</div>
+        <div class="commit-meta">Albor National High School · 2020-2023 </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CONTACT ============================== -->
+<section id="contact">
+  <div class="container">
+    <div class="eyebrow reveal">05 / contact</div>
+    <h2 class="section-title reveal">Let's talk</h2>
+    <p class="section-sub reveal">Open to internships, freelance web work, or just a chat about a project idea.</p>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-info-list">
+          <div class="contact-info-row"><span class="k">email</span><a href="rhemleypena2006@gmail.com">rhemleypena2006@gmail.com</a></div>
+          <div class="contact-info-row"><span class="k">github</span><a href="https://github.com/" target="_blank" rel="noopener">github.com/RemuriSensei</a></div>
+          <div class="contact-info-row"><span class="k">linkedin</span><a href="https://linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/RhemleyPena</a></div>
+          <div class="contact-info-row"><span class="k">location</span><span>Dinagat Islands</span></div>
+        </div>
+        <div class="social-row">
+          <a class="icon-btn" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.98 5.24.98 11.5c0 4.86 3.15 8.98 7.52 10.43.55.1.75-.24.75-.53 0-.26-.01-1.13-.02-2.05-3.06.66-3.71-1.3-3.71-1.3-.5-1.27-1.22-1.6-1.22-1.6-1-.68.07-.67.07-.67 1.1.08 1.68 1.13 1.68 1.13.98 1.68 2.57 1.2 3.2.92.1-.71.38-1.2.7-1.48-2.44-.28-5.01-1.22-5.01-5.42 0-1.2.43-2.18 1.13-2.95-.11-.28-.49-1.4.11-2.92 0 0 .92-.3 3.02 1.13a10.5 10.5 0 0 1 5.5 0c2.1-1.42 3.02-1.13 3.02-1.13.6 1.52.22 2.64.11 2.92.7.77 1.13 1.75 1.13 2.95 0 4.21-2.58 5.14-5.03 5.41.39.34.74 1.02.74 2.06 0 1.49-.01 2.68-.01 3.05 0 .29.2.64.76.53A10.52 10.52 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg>
+          </a>
+          <a class="icon-btn" href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 8.5H3.56V20h3.38V8.5zM5.25 3a1.96 1.96 0 1 0 0 3.92A1.96 1.96 0 0 0 5.25 3zM20.45 20h-3.37v-5.6c0-1.34-.02-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V20H9.68V8.5h3.24v1.57h.05c.45-.85 1.56-1.75 3.2-1.75 3.42 0 4.05 2.25 4.05 5.18V20z"/></svg>
+          </a>
+          <a class="icon-btn" href="mailto:alex.chen@example.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6 12 13 2 6"/><path d="M2 6h20v12H2z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <form class="win reveal" id="contactForm" novalidate>
+        <div class="win-bar">
+          <span class="win-dot red"></span><span class="win-dot yellow"></span><span class="win-dot green"></span>
+          <span class="win-title">send_message.js</span>
+        </div>
+        <div class="win-body">
+          <div class="form-group">
+            <label class="form-label" for="nameInput">name</label>
+            <input class="form-input" type="text" id="nameInput" name="name" placeholder="Jane Doe">
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="emailInput">email</label>
+            <input class="form-input" type="text" id="emailInput" name="email" placeholder="jane@example.com">
+            <span class="form-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="messageInput">message</label>
+            <textarea class="form-textarea" id="messageInput" name="message" placeholder="Tell me about the opportunity or project..."></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary"><span class="prompt"></span> Send Message</button>
+          <div class="form-status" id="formStatus"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== FOOTER ============================== -->
+<footer>
+  <div class="container footer-inner">
+    <span>&copy; <span id="year"></span> Alex Chen. // EOF</span>
+    <span>Built with HTML, CSS &amp; vanilla JS — no frameworks.</span>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
